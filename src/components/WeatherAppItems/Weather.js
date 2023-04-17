@@ -38,18 +38,24 @@ export default function Weather(props) {
 
   if (weatherData.ready) {
     return (
-      <div className="container">
+      <div className="weatherinput">
         <h1>CFG React Weather App</h1>
-        <div className="search">
+        <div className="weather-search">
           <form onSubmit={handleSubmit}>
-            <input
-              type="search"
-              placeholder="Enter a city..."
-              className="form-control"
-              autoFocus="on"
-              onChange={handleCityChange}
-            />
-            <input type="submit" value="Search" className="submit" />
+            <div className="row">
+              <div className="col-1">
+                <input
+                  type="search"
+                  placeholder="Enter a city..."
+                  className="form-control"
+                  autoFocus="on"
+                  onChange={handleCityChange}
+                />
+              </div>
+              <div className="col-9">
+                <input type="submit" value="Search" className="submit" />
+              </div>
+            </div>
           </form>
           <WeatherInfo data={weatherData} />
         </div>

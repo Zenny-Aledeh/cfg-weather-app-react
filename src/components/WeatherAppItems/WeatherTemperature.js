@@ -4,14 +4,14 @@ import "./Weather.css";
 export default function WeatherTemperature(props) {
   const [unit, setUnit] = useState("celsius");
 
-  function showFahrenheit(event) {
-    event.preventDefault();
-    setUnit("fahrenheit");
-  }
-
   function showCelsuis(event) {
     event.preventDefault();
     setUnit("celsuis");
+  }
+
+  function showFahrenheit(event) {
+    event.preventDefault();
+    setUnit("fahrenheit");
   }
 
   function fahrenheit() {

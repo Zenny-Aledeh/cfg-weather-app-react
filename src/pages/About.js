@@ -2,24 +2,25 @@ import React from "react";
 import logo2 from "../components/images/logo-2.png";
 import logo3 from "../components/images/logo-3.png";
 import logo4 from "../components/images/logo-4.png";
+import "./About.css";
 
 export default function Contacts() {
   let message = "Thank you for your audience today!";
   return (
-    <section class="section-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="section-title">The Team Behind the Weather APP</h2>
+    <section className="section-white">
+      <div className="about-container">
+        <div className="row">
+          <div className="col-md-12 text-center">
+            <h2 className="section-title">The Team Behind the Weather APP</h2>
 
-            <p class="section-subtitle">{message}</p>
+            <p className="section-subtitle">{message}</p>
           </div>
 
-          <div class="col-sm-6 col-md-4">
-            <div class="team-item">
-              <img src={logo2} class="logo" alt="" />
-              <h3>Zeinab Abu</h3>
-              <div class="team-info">
+          <div className="col-sm-6 col-md-4">
+            <div className="team-item">
+              <img src={logo2} className="logo" alt="" />
+              <h3 className="name">Zeinab Abu</h3>
+              <div className="team-info">
                 <p>Boss of the Team</p>
               </div>
               <p>
@@ -27,41 +28,41 @@ export default function Contacts() {
                 ones people complain about and the ones no one uses.
               </p>
 
-              <ul class="team-icon">
+              <ul className="team-icon">
                 <li>
-                  <a href="#" class="twitter">
-                    <i class="fa-solid fa-twitter"></i>
+                  <a href="#" className="twitter">
+                    <i className="fa fa-twitter"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="pinterest">
-                    <i class="fa fa-pinterest"></i>
+                  <a href="#" className="pinterest">
+                    <i className="fa fa-pinterest"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="facebook">
-                    <i class="fa fa-facebook"></i>
+                  <a href="#" className="facebook">
+                    <i className="fa fa-facebook"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="dribble">
-                    <i class="fa fa-dribbble"></i>
+                  <a href="#" className="dribble">
+                    <i className="fa fa-dribbble"></i>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
 
-          <div class="col-sm-6 col-md-4">
-            <div class="team-item">
-              <img src={logo3} class="logo" alt="" />
+          <div className="col-sm-6 col-md-4">
+            <div className="team-item">
+              <img src={logo3} className="logo" alt="" />
 
-              <h3>Louise</h3>
+              <h3 className="name">Louise</h3>
 
-              <div class="team-info">
+              <div className="team-info">
                 <p>Creative Specialist</p>
               </div>
 
@@ -70,43 +71,43 @@ export default function Contacts() {
                 sleep because coding makes me stay awake
               </p>
 
-              <ul class="team-icon">
+              <ul className="team-icon">
                 <li>
-                  <a href="#" class="twitter">
-                    <i class="fa fa-twitter"></i>
+                  <a href="#" className="twitter">
+                    <i className="fa fa-twitter"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="pinterest">
-                    <i class="fa fa-pinterest"></i>
+                  <a href="#" className="pinterest">
+                    <i className="fa fa-pinterest"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="facebook">
-                    <i class="fa fa-facebook"></i>
+                  <a href="#" className="facebook">
+                    <i className="fa fa-facebook"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="dribble">
-                    <i class="fa fa-dribbble"></i>
+                  <a href="#" className="dribble">
+                    <i className="fa fa-dribbble"></i>
                   </a>
                 </li>
               </ul>
             </div>
           </div>
-          <div class="col-sm-6 col-md-4">
-            <div class="team-item">
-              <img src={logo4} class="logo" alt="" />
+          <div className="col-sm-6 col-md-4">
+            <div className="team-item">
+              <img src={logo4} className="logo" alt="" />
 
-              <h3>Gulim</h3>
-              <div class="team-info">
+              <h3 className="name">Gulim</h3>
+              <div className="team-info">
                 <p> Specialist of Specialist</p>
               </div>
 
-              <div class="team-info">
+              <div className="team-info">
                 <p></p>
               </div>
 
@@ -116,28 +117,28 @@ export default function Contacts() {
                 I try to make it with CSS.
               </p>
 
-              <ul class="team-icon">
+              <ul className="team-icon">
                 <li>
-                  <a href="#" class="twitter">
-                    <i class="fa fa-twitter"></i>
+                  <a href="#" className="twitter">
+                    <i className="fa fa-twitter"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="pinterest">
-                    <i class="fa fa-pinterest"></i>
+                  <a href="#" className="pinterest">
+                    <i className="fa fa-pinterest"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="facebook">
-                    <i class="fa fa-facebook"></i>
+                  <a href="#" className="facebook">
+                    <i className="fa fa-facebook"></i>
                   </a>
                 </li>
 
                 <li>
-                  <a href="#" class="dribble">
-                    <i class="fa fa-dribbble"></i>
+                  <a href="#" className="dribble">
+                    <i className="fa fa-dribbble"></i>
                   </a>
                 </li>
               </ul>

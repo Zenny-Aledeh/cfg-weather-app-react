@@ -4,33 +4,37 @@ body {
   background: linear-gradient(to right, #19547b, #ffd89b);
 }
 
-.weather-container {
-  max-width: 600px;
-  background: #f0ffff;
-  margin: auto;
-  border-radius: 10px;
-  padding: 10px;
-  margin-top: 100px;
-}
-
-Weather h1,
-.search {
+h1 {
   text-align: center;
 }
 
-Weather h2 {
+h2 {
   text-align: left;
   margin-top: 15px;
 }
 
-.form-control {
-  padding: 3px;
-  margin-right: 10px;
+.weatherinput {
+  border: 1px solid #dadde1;
+  padding: 16px;
   border-radius: 4px;
+  background: #f0ffff;
+  margin-top: 100px;
+  margin-left: 500px;
 }
 
 .capitalise {
   text-transform: capitalize;
+}
+
+.weather-search form {
+  margin-bottom: 20px;
+  padding-left: 250px;
+}
+
+.form-control {
+  padding: 4px;
+  border-radius: 4px;
+  width: 200px;
 }
 
 .submit {
@@ -40,8 +44,8 @@ Weather h2 {
   background-color: rgb(156, 226, 246);
 }
 
-Weather ul,
-Weather li {
+ul,
+li {
   list-style-type: none;
   text-align: right;
 }
@@ -86,7 +90,7 @@ Weather li {
   margin-bottom: -10px;
 }
 
-Weather a {
+a {
   text-decoration: none;
 }
 
