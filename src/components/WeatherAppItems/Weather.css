@@ -1,0 +1,95 @@
+body {
+  background: #ffd89b;
+  background: -webkit-linear-gradient(to right, #19547b, #ffd89b);
+  background: linear-gradient(to right, #19547b, #ffd89b);
+}
+
+.weather-container {
+  max-width: 600px;
+  background: #f0ffff;
+  margin: auto;
+  border-radius: 10px;
+  padding: 10px;
+  margin-top: 100px;
+}
+
+Weather h1,
+.search {
+  text-align: center;
+}
+
+Weather h2 {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.form-control {
+  padding: 3px;
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+.capitalise {
+  text-transform: capitalize;
+}
+
+.submit {
+  border-radius: 4px;
+  padding: 3px;
+  width: 60px;
+  background-color: rgb(156, 226, 246);
+}
+
+Weather ul,
+Weather li {
+  list-style-type: none;
+  text-align: right;
+}
+
+.temp-info {
+  padding-top: 5px;
+  text-align: left;
+  padding-right: 20px;
+}
+
+.img {
+  float: left;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.two {
+  position: relative;
+  top: 60px;
+  margin-bottom: 135px;
+}
+
+.temperature {
+  font-weight: bold;
+  font-size: 60px;
+  position: relative;
+  top: -100px;
+  right: -60px;
+  margin-bottom: -50px;
+  margin-left: 40px;
+  margin-right: 10px;
+}
+
+.unit {
+  position: relative;
+  top: -125px;
+  right: -50px;
+  font-size: 20px;
+  margin-left: 5px;
+  font-weight: 400;
+  line-height: 1;
+  margin-bottom: -10px;
+}
+
+Weather a {
+  text-decoration: none;
+}
+
+.weatherTemperature a:visited {
+  color: blueviolet;
+}
