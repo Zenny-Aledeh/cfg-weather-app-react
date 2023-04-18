@@ -1,7 +1,7 @@
 @import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
 
 footer {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   width: 100%;
 }
@@ -10,7 +10,7 @@ footer {
   margin-top: 70px;
 }
 
-.contact-details {
+/* .contact-details {
   position: absolute;
   left: 0;
 }
@@ -20,7 +20,7 @@ footer {
   overflow-wrap: break-word;
   word-wrap: break-word;
   hyphens: auto;
-}
+} */
 
 .social-menu {
   border-bottom: 1px solid hsl(0, 0%);

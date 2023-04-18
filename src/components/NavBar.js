@@ -1,16 +1,21 @@
 import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import "./NavBar.css";
-import logo from "./images/cfg-weatherapp-logo.gif";
+import logo from './images/logo.png';
+import logotext from './images/logotext.png';
 
 export default function Navbar() {
   return (
     <nav className="nav">
       <Link to="/" className="site-title">
-        <img src={logo} className="logo" alt="Logo" />
+        <div className="App-header">
+          <img src= {logo} className="App-logo" alt="logo" />
+          <img src= {logotext} className= "logo-text" alt = "Rain or shine? Cloudy or fine?" />
+       </div>
       </Link>
       <ul>
         <CustomLink to="/WeatherApp">WeatherApp</CustomLink>
         <CustomLink to="/About">About Us</CustomLink>
+        <CustomLink to="/Contact">Contact Us</CustomLink>
       </ul>
     </nav>
   );
