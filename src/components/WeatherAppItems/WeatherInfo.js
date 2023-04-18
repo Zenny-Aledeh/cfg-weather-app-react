@@ -1,44 +1,35 @@
 import React from "react";
 import FormattedDate from "./FormattedDate";
-import "./Weather.css";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
 
 export default function WeatherInfo(props) {
   return (
-    <div>
-      <h2>{props.data.city}</h2>
-      <div className="temp-info">
-        <div className="one">
-          <h3>
-            <FormattedDate date={props.data.date} />
-          </h3>
-          <h4 className="capitalise">{props.data.description}</h4>
-          <div className="temp-number">
-            <div className="img">
-              <WeatherIcon code={props.data.icon} />
-              <WeatherTemperature
-                celsius={props.data.temp}
-                className="unit temperature"
-              />
+    <div className="WeatherInfo">
+      <h1>{props.data.city}</h1>
+      <ul>
+        <li>
+          <FormattedDate date={props.data.date} />
+        </li>
+        <li className="text-capitalize">{props.data.description}</li>
+      </ul>
+      <div className="row mt-3">
+        <div className="col-6">
+          <div className="d-flex">
+            <WeatherIcon code={props.data.icon} />
+            <div className="float">
+              <WeatherTemperature celsius={props.data.temperature} />
             </div>
           </div>
         </div>
-        <div className="two">
+        <div className="col-6">
           <ul>
-            <li>
-              <strong>Humidity:</strong> {props.data.humidity}%
-            </li>
-            <li>
-              <strong>Wind:</strong> {props.data.wind}km/h
-            </li>
-            <li>
-              <strong>Feels Like:</strong> {props.data.feelsLike}℃
-            </li>
+            <li>Feels Like: {Math.round(props.data.feelsLike)}℃</li>
+            <li>Humidity: {props.data.humidity}%</li>
+            <li>Wind: {props.data.wind} km/h</li>
           </ul>
         </div>
       </div>
-      <hr />
     </div>
   );
 }

@@ -3,7 +3,7 @@ import Weather from "../components/WeatherAppItems/Weather.js";
 
 export default function WeatherApp() {
   return (
-    <div className="container">
+    <div className="WeatherApp">
       <Weather defaultCity="London" />
     </div>
   );
